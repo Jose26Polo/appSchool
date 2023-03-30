@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DiarioActivity">
+
+    <View
+        android:id="@+id/view_alimentacao"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/green_water"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alimentacao"
+        app:layout_constraintStart_toStartOf="@id/view_alimentacao"
+        app:layout_constraintEnd_toEndOf="@id/view_alimentacao"
+        app:layout_constraintTop_toTopOf="@id/view_alimentacao"
+        app:layout_constraintBottom_toBottomOf="@id/view_alimentacao"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/text_cafe_da_manha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Café da manhã:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_alimentacao"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_almoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Almoço:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cafe_da_manha"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_cafe_da_tarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Café da tarde:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_almoco"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/view_higiene"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_cafe_da_tarde"
+        android:layout_marginTop="15dp"
+        android:background="@color/green_water"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Higiene"
+        app:layout_constraintStart_toStartOf="@+id/view_higiene"
+        app:layout_constraintEnd_toEndOf="@+id/view_higiene"
+        app:layout_constraintTop_toTopOf="@+id/view_higiene"
+        app:layout_constraintBottom_toBottomOf="@+id/view_higiene"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/text_fez_xixi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fez xixi:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_higiene"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_fez_coco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fez coco:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_fez_xixi"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/view_sono"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_fez_coco"
+        android:layout_marginTop="15dp"
+        android:background="@color/green_water"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sono"
+        app:layout_constraintStart_toStartOf="@+id/view_sono"
+        app:layout_constraintEnd_toEndOf="@+id/view_sono"
+        app:layout_constraintTop_toTopOf="@+id/view_sono"
+        app:layout_constraintBottom_toBottomOf="@+id/view_sono"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/text_dormiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dormiu:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_sono"
+        android:layout_marginTop="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
