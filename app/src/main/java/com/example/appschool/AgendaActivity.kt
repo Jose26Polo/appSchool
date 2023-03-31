@@ -15,6 +15,6 @@ class AgendaActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar!!.hide()
-        window.statusBarColor = Color.parseColor("#FFFFFF")
+        window.statusBarColor = Color.parseColor("#5271ff")
     }
 }
