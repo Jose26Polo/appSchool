@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         supportActionBar!!.hide()
-        window.statusBarColor = Color.parseColor("#FFFFFF")
+        window.statusBarColor = Color.parseColor("#5271ff")
 
 
         //Eventos
@@ -26,10 +26,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
     override fun onClick(v: View) {
+        lateinit var intent: Intent
         if ( v.id == R.id.view_diario) {
-            val intent = Intent(this,DiarioActivity::class.java)
+            intent = Intent(this,DiarioActivity::class.java)
         } else if ( v.id == R.id.view_agenda) {
-            val intent = Intent(this,AgendaActivity::class.java)
+            intent = Intent(this,AgendaActivity::class.java)
         }
         startActivity(intent)
     }
